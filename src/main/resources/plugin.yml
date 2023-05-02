@@ -1,0 +1,8 @@
+name: DiceGame
+version: '${project.version}'
+main: spigot.dicegame.DiceGame
+api-version: 1.19
+commands:
+  roll:
+    description: dice
+    usage: /roll
