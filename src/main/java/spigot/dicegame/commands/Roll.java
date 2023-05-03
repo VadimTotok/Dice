@@ -1,5 +1,6 @@
 package spigot.dicegame.commands;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -13,7 +14,7 @@ public class Roll implements CommandExecutor {
         Random random = new Random();
 
         for (int i = 0; i < 1; i++) {
-            sender.sendMessage(String.valueOf(random.nextInt(6) + 1));
+            Bukkit.broadcastMessage( sender.getName() + "* " + "rolls the dice " + (random.nextInt(6) + 1));
         }
 
         return true;
