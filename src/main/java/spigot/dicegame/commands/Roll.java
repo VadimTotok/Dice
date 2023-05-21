@@ -18,8 +18,6 @@ public class Roll implements CommandExecutor {
         Random random = new Random();
         Player player = (Player) sender;
 
-        int numDice = 1;
-
         int rollResult = random.nextInt(6) + 1;
         player.sendMessage(String.format("%s rolled %d", player.getName(), rollResult));
 
